@@ -1,0 +1,177 @@
+.body {
+    height: 2000px;
+}
+
+.header {
+    background-image: url("../img/bg-masthead.jpg");
+    /* align-content: center; */
+    /* text-align: center; */
+    /* padding-top: 8.5%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.icon {
+    font-size: 6rem;
+    color: #3742fa;
+    text-align: center;
+    padding-left: 5rem;
+    align-items: center;
+
+}
+
+.container {
+    padding: 8rem;
+
+}
+
+.icons {
+    background-color: #f5f6fa;
+    height: 70vh;
+}
+
+.img {
+    height: 28.264rem;
+
+}
+
+.line {
+    text-align: center;
+    padding-top: 11rem;
+
+}
+
+.lines {
+    text-align: center;
+
+    font-size: 1.2rem;
+}
+
+.rounded-circle {
+    font-size: 5rem;
+}
+.testimonials .rounded-circle {
+    max-width: 12rem;
+    text-align: center;
+
+}
+
+.star {
+    text-align: center;
+    /* padding-top: 10rem; */
+}
+.rounded-circle{
+    max-width: 12rem;
+    text-align: center;
+}
+.testimonials {
+    text-align: center;
+    background-color: rgba(241, 242, 242, 1.1);
+    height: 85vh;
+    align-content: center;
+
+}
+
+
+.containe-fluid .note {
+    text-align: center;
+}
+
+.end {
+    font-size: 2.5rem;
+
+}
+
+.scroll-to-top {
+
+    color: rgba(55, 66, 250, 1.0);
+    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    /* opacity: 0; */
+    /* transition: all 0.4s ease; */
+    transform: translateY(40px);
+}
+
+* .head1 {
+    padding-top: 8.5rem;
+    color: #f5f6fa;
+    font-size: 3.5rem;
+}
+
+.background {
+    text-align: center;
+}
+
+.ff {
+    text-align: center;
+    width: 25rem;/
+    /* margin: right 20rem; ; */
+}
+
+.note {
+    text-align: center;
+    padding-top: 9rem;
+    color: #f5f6fa;
+}
+
+.gg1 {
+    padding-left: 5rem;
+}
+
+.pp1 {
+    padding-left: 3rem;
+}
+
+.icon1 {
+    padding-left: 7rem;
+    text-align: center;
+    font-size: 6rem;
+    color: #3742fa;
+}
+
+.icon3 {
+    padding-right: 7rem;
+    text-align: center;
+    font-size: 6rem;
+    color: #3742fa;
+}
+
+.gg3 {
+    padding-right: 5rem;
+}
+
+.pp3 {
+    padding-right: 3rem;
+}
+
+.icon2 {
+    padding-left: 3.5rem;
+    text-align: center;
+    font-size: 6rem;
+    color: #3742fa;
+}
+
+.signup {
+    background-image: url("../img/bg-masthead.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.call-for-action{
+    height: 20vh;
+    text-align: center;
+    align-content: center;
+}
+
+
