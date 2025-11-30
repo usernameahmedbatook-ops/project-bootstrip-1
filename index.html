@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">startbootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,36 +30,51 @@
     <section class="header">
         <div class="background">
             <h1 class="head1">Generate more leads</br> with a professional </br>landing page!</h1>
-            <form class="form-subscribe">
+            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
                 <div class="row">
                     <div class="col">
-                        <input class="form-control" type="email" placeholder="Email Address"
-                            data-sb-validations="required,email">
+                        <input class="form-control form-control-lg is-invalid" id="emailAddress" type="email"
+                            placeholder="Email Address" data-sb-validations="required,email" data-sb-can-submit="no">
+                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address
+                            is required.</div>
+                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address
+                            Email is not valid.</div>
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                            type="submit">Submit</button></div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a class="text-white"
+                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                     </div>
                 </div>
-        </div>
-        </form>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+            </form>
+
     </section>
     <section class="icons">
         <div class="container d-flex">
             <div class="row text center">
                 <div class="col-lg-4">
-                    <ion-icon name="albums-outline" class="icon3"></ion-icon>
-                    <h2 class="gg3">Fully Responsive</h2>
-                    <p class="pp3">This theme will look great on any device, no matter the size</p>
+                    <ion-icon name="albums-outline" class="qws"></ion-icon>
+                    <h2>Fully Responsive</h2>
+                    <p>This theme will look great on any device, no matter the size</p>
                 </div>
                 <div class="col-lg-4">
-                    <ion-icon name="calendar-clear-outline" class="icon2"></ion-icon>
-                    <h2 class="gg2">Bootstrap 5 Ready</h2>
-                    <p class="pp2">Featuring the latest build of the new Bootstrap 5 framework!</p>
+                    <ion-icon name="calendar-clear-outline" class="qws"></ion-icon>
+                    <h2>Bootstrap 5 Ready</h2>
+                    <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
                 </div>
                 <div class="col-lg-4">
-                    <ion-icon name="bookmarks-outline" class="icon1"></ion-icon>
-                    <h2 class="gg1">Easy to Use</h2>
-                    <p class="pp1">Ready to use with your own content, or customize the source files!</p>
+                    <ion-icon name="bookmarks-outline" class="qws"></ion-icon>
+                    <h2>Easy to Use</h2>
+                    <p>Ready to use with your own content, or customize the source files!</p>
 
                 </div>
             </div>
@@ -67,37 +82,38 @@
 
     </section>
     <section class="showcase">
-        <div class="containe-fluid">
+        <div class="container-fluid p-0">
             <div class="row g-0">
-                <div class="col-lg-6">
-                    <h2 class="line">Fully Responsive Design</h2>
-                    <p class="lines">When you use a theme created by Start Bootstrap,</br> you know that the theme will
-                        look great on any</br>
-                        device, whether it's a phone, tablet, or desktop</br> the page will behave responsively</p>
-                </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img">
                     <img src="img/bg-showcase-1.jpg" class="img">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 ">
+                    <h2 class="line1">Fully Responsive Design</h2>
+                    <p class="lines">When you use a theme created by Start Bootstrap, you know that the theme will
+                        look great on any device, whether it's a phone, tablet, or desktop the page will behave
+                        responsively!</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img">
                     <img src="img/bg-showcase-2.jpg" class="img">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 my-auto showcase-text">
                     <h2 class="line">Updated For Bootstrap 5</h2>
-                    <p class="lines">Newly improved, and full of great utility classes</br>, Bootstrap 5 is leading the
-                        way in mobile
-                        responsive web development!</br> All of the themes on Start</br> Bootstrap are now using
-                        Bootstrap 5</p>
+                    <p class="lines">Newly improved, and full of great utility classes, Bootstrap 5 is leading the
+                        way in mobile responsive web development! All of the themes on Start Bootstrap are now using
+                        Bootstrap 5!</p>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="line">Easy to Use & Customize</h2>
-                    <p class="lines">Landing Page is just HTML and CSS with a splash </br>of SCSS for users who demand
-                        some deeper</br>
-                        customization options. Out of the box, just add your</your> content and images, and your new
-                        landing
-                        page will be ready to go</p>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img">
+                    <img src="img/bg-showcase-3.jpg" class="img">
                 </div>
-                <div class="col-lg-6">
-                    <img src=" img/bg-showcase-3.jpg" class="img">
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2 class="line">Easy to Use &amp; Customize</h2>
+                    <p class="lines">Landing Page is just HTML and CSS with a splash of SCSS for users who demand
+                        some deeper customization options. Out of the box, just add your content and images, and your
+                        new landing page will be ready to go!</p>
                 </div>
             </div>
         </div>
@@ -112,7 +128,6 @@
                     <p>"This is fantastic! Thanks so much guys!</p>
                 </div>
                 <div class="col-lg-4">
-    
                     <img src="img/testimonials-2.jpg" class="rounded-circle">
                     <h3>Fred S</h3>
                     <p>"Bootstrap is amazing. I've been using it</br> to create lots of super nice landing pages</p>
@@ -126,17 +141,30 @@
         </div>
     </section>
     <section class="signup">
-        <form class="form-subscribe">
-            <h2 class="note">Ready to get started? Sign up now!</h2>
+        <h2 class="note">Ready to get started? Sign up now!</h2>
+        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
             <div class="row">
                 <div class="col">
-                    <input class="form-control" type="email" placeholder="Email Address"
-                        data-sb-validations="required,email">
+                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
+                        placeholder="Email Address" data-sb-validations="required,email" data-sb-can-submit="no">
+                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address
+                        is required.</div>
+                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address
+                        Email is not valid.</div>
                 </div>
-                <div class="col-auto">
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                        type="submit">Submit</button></div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a class="text-white"
+                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                 </div>
             </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
             </div>
         </form>
     </section>
@@ -144,7 +172,7 @@
         <footer class="footer">
             <div class="containe-fluid">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6">
 
                         <a href="#">.about</a>
                         <a href="#">.Contact</a>
@@ -153,7 +181,7 @@
 
                         <p>© Your Website 2023. All Rights Reserved.</p>
                     </div>
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-6 ">
                         <a href="#" class="end"><ion-icon name="logo-facebook"></ion-icon></a>
                         <a href="#" class="end"><ion-icon name="logo-instagram"></ion-icon></a>
                         <a href="#" class="end"><ion-icon name="logo-twitter"></ion-icon></a>
